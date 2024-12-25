@@ -1,0 +1,7 @@
+services:
+  certbot-traefik:
+    build:
+      context: .
+    init: true
+    volumes:
+      - ./letsencrypt:/etc/letsencrypt
